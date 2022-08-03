@@ -468,23 +468,56 @@ if (!isCmd && isGroup && checkResponGroup(from, chats, db_respon_group)) {
         }
 
 // Text Nya
-const wiwik = `*List Menu Barata id* 💎
-Ketik :
+const wiwik = `*MAIN MENU*
+ • .owner
+ • .stiker
+ 
+*STORE MENU*
+ • .list
+ • .addlist
+ • .dellist
+ • .update
+ • .tambah
+ • .kurang
+ • .kali
+ • .bagi
 
- • ML
- • COA
- • GIFT
- • FF
- • PUBG
- • STUMBLE
- • ROBLOX
- • COC
- • COR
- • FIFA
- • TIKTOK
- • LITMATCH
- • PAY
- • FORMAT`
+*PROSES/DONE*
+ • proses < reply chat >
+ • done < reply chat >
+ • .setproses
+ • .changeproses
+ • .delsetproses
+ • .setdone
+ • .changedone
+ • .delsetdone
+
+*GROUP MENU*
+ • .linkgc
+ • .setppgc
+ • .setnamegc
+ • .setdesc
+ • .antilink
+ • .open
+ • .close
+ • .add
+ • .kick
+ • .promote
+ • .demote
+ • .revoke
+ • .hidetag
+
+*OWNERS MENU*
+ • .runtime
+ • .join
+ • .left
+ • .self
+ • .public
+ • >
+ • $
+ • =>
+ • .setppbot
+ • .broadcast`
         
         switch (command || triggerSticker()) {
         
