@@ -494,6 +494,235 @@ Ketik :
                    var media = await reSize(setting.pathimg, 300, 200)
                    zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
                    break
+			
+			case 'ml':
+reply(`*LIST MOBILE LEGEND*
+VIA LOGIN
+
+165   💎  30.000
+275   💎  50.000
+565   💎  90.000
+1155 💎  180.000
+1765 💎  260.000
+2975 💎  395.000
+6000 💎  770.000
+
+* LEGAL & AMAN 100 %
+* LOGIN MOONTON / FB
+* V2L (VERIF) MATI/OFF
+* PROSES 1 JAM* (MAX 24 JAM)*
+* BERLAKU KELIPATAN`)
+break
+	
+			case 'ff':
+reply(`*LIST FREE FIRE*
+VIA LOGIN
+
+100 💎   :  10.800
+310 💎   :  32.400
+520 💎   :  54.000
+830 💎   :  86.400
+1060 💎 :  108.000
+1580 💎 :  162.000
+2180 💎 :  216.000
+3240 💎 :  324.000
+5600 💎 :  540.000 
+
+•𝘓𝘦𝘷𝘦𝘭 𝘜𝘱 𝘗𝘢𝘴𝘴: 12.000
+•𝘔𝘦𝘮𝘣𝘦𝘳𝘴𝘩𝘪𝘱 Mingguan : 22.000
+•𝘔𝘦𝘮𝘣𝘦𝘳𝘴𝘩𝘪𝘱 𝘉𝘶𝘭𝘢𝘯𝘢𝘯 : 85.000 
+
+*Login google min 300💎
+*Berlaku Kelipatan`)
+break
+			
+	case 'pubg':
+reply(`*LIST UC PUBG*
+VIA LOGIN 
+
+300       :   65.000
+600       :   130.000
+1500     :   320.000
+3000     :   640.000
+6000     :   1.225.000`)
+break	
+			
+			case 'stumble':
+reply(`*LIST STUMBLE GUYS*
+VIA LOGIN 
+
+PERMATA
+800      :   23.000
+1600    :   35.000
+5000    :   93.000 
+
+TOKEN
+120      :   28.000
+1300    :   200.00`)
+break
+			
+			case 'roblox':
+reply(`*LIST ROBLOX (ROBUX)*
+VIA LOGIN 
+
+240 ROBUX      :   35.000
+400 ROBUX      :   55.000
+800 ROBUX      :   120.000
+1.700 ROBUX    :   230.000
+4.500 ROBUX    :   570.000
+10.000 ROBUX  :   1.150.000`)
+break
+			
+			case 'coc':
+reply(`*LIST COC*
+VIA LOGIN 
+
+500         :   60.000
+1200       :   115.000
+2500       :   235.000
+6500       :   550.000
+14.000    :   1.200.000 
+
+GOLD PASS  :   60.000`)
+break
+			
+			case 'cor':
+reply(`*LIST CLASH OF ROYAL*
+VIA LOGIN 
+
+500         :   60.000
+1200       :   115.000
+2500       :   235.000
+6500       :   550.000
+14.000    :   1.200.000`)
+break
+			
+			case 'fifa':
+reply(`*LIST POINT FIFA*
+VIA LOGIN 
+
+500          :    33.000
+1050        :    65.000
+2200        :    120.000
+5750        :    300.000
+12000      :    550.000 
+
+PASS PREM       :   65.000
+BUNDLE PASS   :   120.000`)
+break
+			
+			case 'tiktok':
+reply(`*KOIN TIKTOK*
+VIA LOGIN 
+
+350        :    80.000
+700        :    155.000
+1050      :    215.000
+1400      :    305.000
+3500      :    750.000
+7000      :    1.450.000
+17.500   :    3.550.000`)
+break
+			
+			case 'pay':
+reply(`*PAYMENT*
+
+BANK 
+• BCA :  0450990132 
+
+• BRI   :  110401012554505 
+
+• JAGO : 102488141032 
+
+A.N  DANY FIRMANSYAH
+
+
+DANA - GOPAY - OVO
+082282957410  A.N  DANY FIRMANSYAH`)
+break
+			
+			case 'format':
+reply(`*FORMAT ORDER* : 
+
+Login via :
+Email   :
+Pass    :
+Order   :      
+Nick     : 
+
+*ML req hero jangan di mainkan :`)
+break
+			case 'gift':
+reply(`GIFT SKIN/ITEM ||  R125* 
+
+GIFT SKIN || DELAY 7 HARI
+299💎NORMAL        : Rp 37.375
+599💎ELITE              : Rp 74.875
+749💎SPECIAL        : Rp 93.625
+899💎EPIC               : Rp 112.375
+1089💎  LIGHTBORN  : Rp 136.000 
+
+188💎 PAINTED SKIN = Rp 23.500 
+
+GIFT SKIN PROMO (PO) 
+
+188💎 NORMAL = Rp 24.000
+419💎 ELITE       = Rp 53.000
+524💎 SPECIAL  = Rp 65.000
+629💎 EPIC         = Rp 78.000 
+
+Ganti Nama      = Rp 30.000
+Ganti Bendera  = Rp 125.000
+
+
+GIFT KHARISMA (NO DELAY) 
+
+499💎 ANGLE ARK = Rp 63.000
+499💎 PARADISE ISLAND = Rp 63.000
+999💎 GOLDMOON LANTERN = Rp 125.000 
+
+RULES
+❎ DILARANG GANTI NICK & UNFOLL 
+
+#Joki Collector Skin  : Rp 800.000
+- Jamin dapat skin collector
+- Dapat bonus diamond random`)
+			break
+			
+			case 'coa':
+reply(`CRYSTAL OF AURORA / COA 
+
+#Harga 
+
+- Bulanan 65.000 
+   - Kehitung Misi Top Up 400💎
+   - Mendapatkan 1100 COA 
+
+- Bulanan + Mingguan 90.000
+   - Kehitung Misi Top Up 500💎
+   - Mendapatkan 1400 COA
+   
+#Kegunaan Crystal Of Aurora
+  - Gaca Collector Skin (Skin COLLECTOR)
+  - Gaca Zodiac Summon (Skin ZODIAC)
+  - Gaca Magic Whell (Skin LEGEND)
+  - Gaca Aurora Summon (Skin EPIC) 
+
+*Proses Sama Seperti DM Vilog`)
+			break
+			
+			case 'litmatch':
+reply(`LIST 💎 LITMATCH
+VIA LOGIN / HUJAN 
+
+550     💎  :  12.000
+1.650  💎  :  33.000
+4.070  💎  :  80.000
+8.140  💎  :  165.000
+20.000   💎  :  350.000
+48.000   💎  :  850.000
+146.000 💎  :  2.800.000`)
+			break
         
         case prefix+'owner': case prefix+'dev':
             sendContact(from, ownerNumber.split('@s.whatsapp.net')[0], ownerName, msg)
