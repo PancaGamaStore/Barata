@@ -500,19 +500,18 @@ Ketik :
 reply(`*LIST MOBILE LEGEND*
 VIA LOGIN
 
-165   💎  30.000
-275   💎  50.000
-565   💎  90.000
-1155 💎  180.000
-1765 💎  260.000
-2975 💎  395.000
-6000 💎  770.000
+165    💎   30.000
+275    💎   50.000
+565    💎   90.000
+1155  💎   180.000
+1765  💎   265.000
+2975  💎   410.000
+6000  💎   770.000 
 
 * LEGAL & AMAN 100 %
-* LOGIN MOONTON / FB
-* V2L (VERIF) MATI/OFF
-* PROSES 1 JAM* (MAX 24 JAM)*
-* BERLAKU KELIPATAN`)
+* PROSES 1-7 MENIT (SESUAI ANTRIAN)*
+* TANPA MAIN CLASIK
+* DAPAT BUKTI TOP UP`)
 break
 	
 			case 'ff':
@@ -535,6 +534,21 @@ VIA LOGIN
 
 *Login google min 300💎
 *Berlaku Kelipatan`)
+break
+			
+case 'genshin':
+reply(`*LIST GENSHIN IMPACT*
+VIA LOGIN 
+
+300  GC      :   52.000
+980  GC      :   160.000
+1980  GC    :   310.000
+3280  GC    :   530.000
+6480  GC    :   1.100.000 
+
+BLESSING    :   55.000
+GNOSTIC HYMN  :  105.000
+GNOSTIC CHORUS  :  210.000`)
 break
 			
 	case 'pubg':
@@ -588,7 +602,7 @@ GOLD PASS  :   60.000`)
 break
 			
 			case 'cor':
-reply(`*LIST CLASH OF ROYAL*
+reply(`*LIST CLASH ROYAL*
 VIA LOGIN 
 
 500         :   60.000
