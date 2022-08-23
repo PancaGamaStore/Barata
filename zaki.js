@@ -472,6 +472,22 @@ if (!isCmd && isGroup && checkResponGroup(from, chats, db_respon_group)) {
             }
         }
 
+// Text Nya
+const wiwik = `*List Menu Barata id* 💎
+Ketik :
+
+ • ML
+ `
+        
+        switch (command || triggerSticker()) {
+        
+//━━━━━━━━━━━━━━━[ MAIN MENU ]━━━━━━━━━━━━━━━━━//
+        case prefix+'ghenunani':
+                case prefix+'helepcok':
+                   var media = await reSize(setting.pathimg, 300, 200)
+                   zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
+                   break	    
+	    
 case 'menu': case 'help' :
 replyt(`*List Menu Barata id* 💎
 Ketik :
