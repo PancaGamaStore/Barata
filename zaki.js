@@ -49,6 +49,7 @@ const exif = new Exif()
 let pendaftar = JSON.parse(fs.readFileSync('./database/user.json'))
 let mess = JSON.parse(fs.readFileSync('./responnya.json'));
 let antilink = JSON.parse(fs.readFileSync('./database/antilink.json'));
+let fakeimage = fs.readFileSync("./media/logo.jpg");
 let listCmd = JSON.parse(fs.readFileSync('./database/listcmd.json'));
 let _cmd = JSON.parse(fs.readFileSync('./database/command.json'));
 let _cmdUser = JSON.parse(fs.readFileSync('./database/commandUser.json'));
@@ -242,6 +243,10 @@ module.exports = async(zaki, msg, m, setting, store, welcome, left, set_welcome_
         }
         const sendMess = (hehe, teks) => {
         	zaki.sendMessage(hehe, { text, teks })
+        }
+	const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 50, status: 200, thumbnail: fakeimage, surface: 200, orderTitle: 'zaki', sellerJid: '0@s.whatsapp.net'} } }
+        const replyt = (teks) => {
+        	return zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
         }
         const buttonWithText = (from, text, footer, buttons) => {
         	return zaki.sendMessage(from, { text: text, footer: footer, templateButtons: buttons })
@@ -467,8 +472,8 @@ if (!isCmd && isGroup && checkResponGroup(from, chats, db_respon_group)) {
             }
         }
 
-// Text Nya
-const wiwik = `*List Menu Barata id* 💎
+case 'menu': case 'help' :
+replyt(`*List Menu Barata id* 💎
 Ketik :
 
  • ML
@@ -485,19 +490,11 @@ Ketik :
  • TIKTOK
  • LITMATCH
  • PAY
- • FORMAT`
-        
-        switch (command || triggerSticker()) {
-        
-//━━━━━━━━━━━━━━━[ MAIN MENU ]━━━━━━━━━━━━━━━━━//
-        case prefix+'menu':
-                case prefix+'help':
-                   var media = await reSize(setting.pathimg, 300, 200)
-                   zaki.sendMessage(from, { caption: wiwik, location: { jpegThumbnail: media }, templateButtons: buttonsDefault, footer: footer, mentions: [sender] }, { quoted: msg })
-                   break
-			
+ • FORMAT`)
+zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
+break
 			case 'ml':
-reply(`*LIST MOBILE LEGEND*
+replyt(`*LIST MOBILE LEGEND*
 VIA LOGIN
 
 165    💎   30.000
@@ -512,10 +509,11 @@ VIA LOGIN
 * PROSES 1-7 MENIT (SESUAI ANTRIAN)*
 * TANPA MAIN CLASIK
 * DAPAT BUKTI TOP UP`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 	
 			case 'ff':
-reply(`*LIST FREE FIRE*
+replyt(`*LIST FREE FIRE*
 VIA LOGIN
 
 100 💎   :  10.800
@@ -534,10 +532,11 @@ VIA LOGIN
 
 *Login google min 300💎
 *Berlaku Kelipatan`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 case 'genshin':
-reply(`*LIST GENSHIN IMPACT*
+replyt(`*LIST GENSHIN IMPACT*
 VIA LOGIN 
 
 300  GC      :   52.000
@@ -549,10 +548,11 @@ VIA LOGIN
 BLESSING    :   55.000
 GNOSTIC HYMN  :  105.000
 GNOSTIC CHORUS  :  210.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 	case 'pubg':
-reply(`*LIST UC PUBG*
+replyt(`*LIST UC PUBG*
 VIA LOGIN 
 
 300       :   65.000
@@ -560,10 +560,11 @@ VIA LOGIN
 1500     :   320.000
 3000     :   640.000
 6000     :   1.225.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break	
 			
 			case 'stumble':
-reply(`*LIST STUMBLE GUYS*
+replyt(`*LIST STUMBLE GUYS*
 VIA LOGIN 
 
 PERMATA
@@ -574,10 +575,11 @@ PERMATA
 TOKEN
 120      :   28.000
 1300    :   200.00`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'roblox':
-reply(`*LIST ROBLOX (ROBUX)*
+replyt(`*LIST ROBLOX (ROBUX)*
 VIA LOGIN 
 
 240 ROBUX      :   35.000
@@ -586,10 +588,11 @@ VIA LOGIN
 1.700 ROBUX    :   230.000
 4.500 ROBUX    :   570.000
 10.000 ROBUX  :   1.150.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'coc':
-reply(`*LIST COC*
+replyt(`*LIST COC*
 VIA LOGIN 
 
 500         :   60.000
@@ -599,10 +602,11 @@ VIA LOGIN
 14.000    :   1.200.000 
 
 GOLD PASS  :   60.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'cor':
-reply(`*LIST CLASH ROYAL*
+replyt(`*LIST CLASH ROYAL*
 VIA LOGIN 
 
 500         :   60.000
@@ -610,10 +614,11 @@ VIA LOGIN
 2500       :   235.000
 6500       :   550.000
 14.000    :   1.200.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'fifa':
-reply(`*LIST POINT FIFA*
+replyt(`*LIST POINT FIFA*
 VIA LOGIN 
 
 500          :    33.000
@@ -624,10 +629,11 @@ VIA LOGIN
 
 PASS PREM       :   65.000
 BUNDLE PASS   :   120.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'tiktok':
-reply(`*KOIN TIKTOK*
+replyt(`*KOIN TIKTOK*
 VIA LOGIN 
 
 350        :    80.000
@@ -637,10 +643,11 @@ VIA LOGIN
 3500      :    750.000
 7000      :    1.450.000
 17.500   :    3.550.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'pay':
-reply(`*PAYMENT*
+replyt(`*PAYMENT*
 
 BANK 
 • BCA :  0450990132 
@@ -654,10 +661,11 @@ A.N  DANY FIRMANSYAH
 
 DANA - GOPAY - OVO
 082282957410  A.N  DANY FIRMANSYAH`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'format':
-reply(`*FORMAT ORDER* : 
+replyt(`*FORMAT ORDER* : 
 
 Login via :
 Email   :
@@ -666,9 +674,10 @@ Order   :     
 Nick     : 
 
 *ML req hero jangan di mainkan :`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			case 'gift':
-reply(`GIFT SKIN/ITEM ||  R125* 
+replyt(`GIFT SKIN/ITEM ||  R125* 
 
 GIFT SKIN || DELAY 7 HARI
 299💎NORMAL        : Rp 37.375
@@ -702,10 +711,11 @@ RULES
 #Joki Collector Skin  : Rp 800.000
 - Jamin dapat skin collector
 - Dapat bonus diamond random`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 			break
 			
 			case 'coa':
-reply(`CRYSTAL OF AURORA / COA 
+replyt(`CRYSTAL OF AURORA / COA 
 
 #Harga 
 
@@ -724,10 +734,11 @@ reply(`CRYSTAL OF AURORA / COA
   - Gaca Aurora Summon (Skin EPIC) 
 
 *Proses Sama Seperti DM Vilog`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 			break
 			
 			case 'litmatch':
-reply(`LIST 💎 LITMATCH
+replyt(`LIST 💎 LITMATCH
 VIA LOGIN / HUJAN 
 
 550     💎  :  12.000
@@ -737,6 +748,7 @@ VIA LOGIN / HUJAN
 20.000   💎  :  350.000
 48.000   💎  :  850.000
 146.000 💎  :  2.800.000`)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 			break
         
         case prefix+'owner': case prefix+'dev':
@@ -747,7 +759,8 @@ VIA LOGIN / HUJAN
 	case prefix+'runtime':
 	case prefix+'time':
 	let timetext =`*Runtime Bot :*\n_${runtime(process.uptime())}_`
-	reply(timetext)
+	replyt(timetext)
+	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 	break
         
 			case prefix+'sticker': case prefix+'stiker': case prefix+'s':
@@ -811,9 +824,9 @@ case prefix+'exif':
 			
 //━━━━━━━━━━━━━━━[ STORE MENU ]━━━━━━━━━━━━━━━━━//
         case prefix+'shop': case prefix + 'list':
-            if (!isGroup) return reply(mess.OnlyGrup)
-            if (db_respon_list.length === 0) return reply(`Belum ada list message di database`)
-            if (!isAlreadyResponListGroup(from, db_respon_list)) return reply(`Belum ada list message yang terdaftar di group ini`)
+            if (!isGroup) return replyt(mess.OnlyGrup)
+            if (db_respon_list.length === 0) return replyt(`Belum ada list message di database`)
+            if (!isAlreadyResponListGroup(from, db_respon_list)) return replyt(`Belum ada list message yang terdaftar di group ini`)
             var arr_rows = [];
             for (let x of db_respon_list) {
                 if (x.id === from) {
@@ -832,7 +845,7 @@ case prefix+'exif':
                     title: groupName, rows: arr_rows
                 }]
             }
-            zaki.sendMessage(from, listMsg)
+            zaki.sendMessage(from, listMsg, {quoted: troli})
             break
         case prefix+'addlist':
             if (!isGroup) return reply(mess.OnlyGrup)
@@ -1084,14 +1097,14 @@ await zaki.sendMessage(`${args[1]}@s.whatsapp.net`, {text: sukses });
             }
             break
         case prefix+'open': case prefix+'buka':
-            if (!isGroup) return reply(mess.OnlyGrup)
-		    if (!isGroupAdmins && !isOwner) return reply(mess.GrupAdmin)
-		    if (!isBotGroupAdmins) return reply(mess.BotAdmin)
+            if (!isGroup) return replyt(mess.OnlyGrup)
+		    if (!isGroupAdmins && !isOwner) return replyt(mess.GrupAdmin)
+		    if (!isBotGroupAdmins) return replyt(mess.BotAdmin)
             zaki.groupSettingUpdate(from, 'not_announcement')
             .then((res) => {
-                const textOpen = getTextSetOpen(from, set_open);
+                const textOpen = getTextSetOpen(from, set_open, {quoted: troli});
                 if (textOpen !== undefined) {
-                    reply(textOpen);
+                    replyt(textOpen);
                 } else {
                     reply(`Sukses mengizinkan semua peserta dapat mengirim pesan ke grup ini`)
                 }
@@ -1099,16 +1112,16 @@ await zaki.sendMessage(`${args[1]}@s.whatsapp.net`, {text: sukses });
             .catch((err) => reply('Error'))
 			break
         case prefix+'close': case prefix+'tutup':
-            if (!isGroup) return reply(mess.OnlyGrup)
-		    if (!isGroupAdmins && !isOwner) return reply(mess.GrupAdmin)
-		    if (!isBotGroupAdmins) return reply(mess.BotAdmin)
+            if (!isGroup) return replyt(mess.OnlyGrup)
+		    if (!isGroupAdmins && !isOwner) return replyt(mess.GrupAdmin)
+		    if (!isBotGroupAdmins) return replyt(mess.BotAdmin)
 		    zaki.groupSettingUpdate(from, 'announcement')
 		    .then((res) => {
-                const textClose = getTextSetClose(from, set_close);
+                const textClose = getTextSetClose(from, set_close, {quoted: troli});
                 if (textClose !== undefined) {
                     reply(textClose);
                 } else {
-                    reply(`Sukses mengizinkan hanya admin yang dapat mengirim pesan ke grup ini`)
+                    replyt(`Sukses mengizinkan hanya admin yang dapat mengirim pesan ke grup ini`)
                 }
             })
             .catch((err) => reply('Error'))
@@ -1202,11 +1215,11 @@ await zaki.sendMessage(`${args[1]}@s.whatsapp.net`, {text: sukses });
             }).catch(() => reply(mess.error.api))
             break
         case prefix+'hidetag':
-            if (!isGroup) return reply(mess.OnlyGrup)
-		    if (!isGroupAdmins && !isOwner) return reply(mess.GrupAdmin)
+            if (!isGroup) return replyt(mess.OnlyGrup)
+		    if (!isGroupAdmins && !isOwner) return replyt(mess.GrupAdmin)
             let mem = [];
             groupMembers.map( i => mem.push(i.id) )
-            zaki.sendMessage(from, { text: q ? q : '', mentions: mem })
+            zaki.sendMessage(from, { text: q ? q : '', mentions: mem }, { quoted: troli })
             break
         case prefix+'delete': case prefix+'del': case prefix+'d':
             if (!isGroup) return reply(mess.OnlyGrup)
