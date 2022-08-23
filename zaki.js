@@ -525,7 +525,6 @@ VIA LOGIN
 * PROSES 1-7 MENIT (SESUAI ANTRIAN)*
 * TANPA MAIN CLASIK
 * DAPAT BUKTI TOP UP`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 	
 			case 'ff':
@@ -548,7 +547,6 @@ VIA LOGIN
 
 *Login google min 300💎
 *Berlaku Kelipatan`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 case 'genshin':
@@ -564,7 +562,6 @@ VIA LOGIN
 BLESSING    :   55.000
 GNOSTIC HYMN  :  105.000
 GNOSTIC CHORUS  :  210.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 	case 'pubg':
@@ -576,7 +573,6 @@ VIA LOGIN
 1500     :   320.000
 3000     :   640.000
 6000     :   1.225.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break	
 			
 			case 'stumble':
@@ -591,7 +587,6 @@ PERMATA
 TOKEN
 120      :   28.000
 1300    :   200.00`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'roblox':
@@ -604,7 +599,6 @@ VIA LOGIN
 1.700 ROBUX    :   230.000
 4.500 ROBUX    :   570.000
 10.000 ROBUX  :   1.150.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'coc':
@@ -618,7 +612,6 @@ VIA LOGIN
 14.000    :   1.200.000 
 
 GOLD PASS  :   60.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'cor':
@@ -630,7 +623,6 @@ VIA LOGIN
 2500       :   235.000
 6500       :   550.000
 14.000    :   1.200.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'fifa':
@@ -645,7 +637,6 @@ VIA LOGIN
 
 PASS PREM       :   65.000
 BUNDLE PASS   :   120.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'tiktok':
@@ -659,7 +650,6 @@ VIA LOGIN
 3500      :    750.000
 7000      :    1.450.000
 17.500   :    3.550.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'pay':
@@ -677,7 +667,6 @@ A.N  DANY FIRMANSYAH
 
 DANA - GOPAY - OVO
 082282957410  A.N  DANY FIRMANSYAH`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			
 			case 'format':
@@ -690,7 +679,6 @@ Order   :     
 Nick     : 
 
 *ML req hero jangan di mainkan :`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			case 'gift':
 replyt(`GIFT SKIN/ITEM ||  R125* 
@@ -727,7 +715,6 @@ RULES
 #Joki Collector Skin  : Rp 800.000
 - Jamin dapat skin collector
 - Dapat bonus diamond random`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 			break
 			
 			case 'coa':
@@ -750,7 +737,6 @@ replyt(`CRYSTAL OF AURORA / COA
   - Gaca Aurora Summon (Skin EPIC) 
 
 *Proses Sama Seperti DM Vilog`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 			break
 			
 			case 'litmatch':
@@ -764,7 +750,6 @@ VIA LOGIN / HUJAN
 20.000   💎  :  350.000
 48.000   💎  :  850.000
 146.000 💎  :  2.800.000`)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 			break
         
         case prefix+'owner': case prefix+'dev':
@@ -776,7 +761,6 @@ VIA LOGIN / HUJAN
 	case prefix+'time':
 	let timetext =`*Runtime Bot :*\n_${runtime(process.uptime())}_`
 	replyt(timetext)
-	    zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 	break
         
 			case prefix+'sticker': case prefix+'stiker': case prefix+'s':
