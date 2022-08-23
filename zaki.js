@@ -489,6 +489,7 @@ Ketik :
                    break	    
 	    
 case 'menu': case 'help' :
+case prefix+'menu': case prefix+'help' :
 replyt(`*List Menu Barata id* 💎
 Ketik :
 
