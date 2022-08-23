@@ -508,7 +508,6 @@ Ketik :
  • LITMATCH
  • PAY
  • FORMAT`)
-zaki.sendMessage(from, { text: teks, mentions: parseMention(teks) }, { quoted: troli })
 break
 			case 'ml':
 replyt(`*LIST MOBILE LEGEND*
